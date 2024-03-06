@@ -3,11 +3,48 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
+  display: flex;
   text-align: center;
   color: #333;
 }
 
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  width: 100%;
+}
 
+ul li {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  padding: 10px;
+  align-items: right;
+  border: solid rgb(174, 163, 163);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+ul img {
+  max-width: 30%;
+  height: auto;
+  margin-left: 10px;
+  top: 30;
+  right: 0;
+  border-radius: 10px;
+}
