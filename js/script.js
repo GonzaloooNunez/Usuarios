@@ -19,13 +19,15 @@ function mostrarUsuarios() {
         let rutaImagen = `./assets/img/${index + 1}.jpeg`;
         imagen.src = rutaImagen;
 
+        const { name, email, phone, company, address } = user;
+
         let infoUsuario = [
-          `<strong>Nombre:</strong> ${user.name}`,
+          `<strong>Nombre:</strong> ${name}`,
           `<strong>Edad:</strong> ${edadAleatoria(18, 46)}`,
-          `<strong>Correo:</strong> ${user.email}`,
-          `<strong>Telefono:</strong> ${user.phone}`,
-          `<strong>Compañia:</strong> ${user.company.name}`,
-          `<strong>Direccion:</strong> ${user.address.suite}, ${user.address.street}, ${user.address.city}`,
+          `<strong>Correo:</strong> ${email}`,
+          `<strong>Telefono:</strong> ${phone}`,
+          `<strong>Compañia:</strong> ${company.name}`,
+          `<strong>Direccion:</strong> ${address.suite}, ${address.street}, ${address.city}`,
         ];
 
         let texto = document.createElement("div");
